@@ -1,0 +1,47 @@
+/*removing margin*/
+html, body
+{
+    margin: 0px;
+}
+/*changing background color*/
+body
+{
+    background-color: rgb(61, 75, 94)
+}
+/*changing background color, dimensions and padding*/
+nav
+{
+    background-color: rgb(91, 146, 223);
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+}
+/*changing font-size family, margin, and color*/
+a
+{
+    font-size: 30px;
+    font-family: 'Cambria';
+    margin-left: 150px;
+    color:black;
+}
+/*styling the container which has our reviews with some margin*/
+#container
+{
+    margin-top: 100px;
+    text-align: center;
+    width: 60%;
+    margin-left: 250px;
+    font-size: 20px;
+}
+/*styling the button on the active page*/
+#active
+{
+    color:white;
+}
+/* This is a comment to make validations within the footer*/
+
+.validate
+{
+    font-size: 12px;
+    margin-left: 0px;
+}
