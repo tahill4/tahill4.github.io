@@ -74,3 +74,8 @@ span
     font-size: 12px;
     margin-left: 0px;
 }
+/*styling the button on the active page*/
+#active
+{
+    color:white;
+}
