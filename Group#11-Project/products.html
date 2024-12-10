@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="product.css">
+<!-- Adding jQuery and jQuery UI dependencies -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<title> Shoppy</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <!-- This is the navigation bar across all the pages and contains links to the
+			other pages of the website. Mainly, I have four main pages in my project, which
+			are:
+			(1) “index.html”: my home page, which provides an overview of the website's
+			purpose and highlights key information. 
+			(2) “products.html”: Page allows users to browse products.
+			(3) “contact-us.html”: Contact Us page provides visitors with contact page,
+			email addresses, and phone numbers to reach out directly.
+			(4) “info.html”: About Us page offers background information about the
+			company, and its mission. -->
+        <nav>
+            <a href="index.html"> Home </a>
+            <a id="active" href="products.html"> Products </a>
+            <a href="info.html"> Info </a>
+            <a href="contact_us.html"> Contact us </a>
+        </nav>
+    </header>
+    <!-- Main section contains a grid of products provided by shoppy-->
+    <main>
+
+        <!-- Adding search functionality -->
+        <input type="text" id="search" placeholder="Search products...">
+
+        <div id="container">
+            <div class="item">
+                <img src="images/5.jpg" alt="banana">
+                <div class="text">Bananas $1.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/6.jpg" alt="apple">
+                <div class="text">Apples $2.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/7.jpg" alt="lemon">
+                <div class="text">Lemons $1.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/8.jpg" alt="grape">
+                <div class="text">Grapes $4.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/9.jpg" alt="Broccoli">
+                <div class="text">Broccoli $3.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/10.jpg" alt="Cherry">
+                <div class="text">Cherries $2.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/11.jpg" alt="Cabbage">
+                <div class="text">Cabbage $1.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/12.jpg" alt="Tomatoes">
+                <div class="text">Tomatoes $3.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/13.jpg" alt="Peppers">
+                <div class="text">Peppers $1.99/lb</div>
+                <div class="calculator">
+                    <input type="number" min="1" value="1">
+                    <button class="calculate">Calculate Total</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--The footer contains the HTMl and CSS Validation and the shoppy tag-->
+    <footer>
+        2024 Shoppy.<br>
+        All rights reserved.<br><br>
+
+        <a class="validate" href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate
+            HTML</a> <br>
+
+        <a class="validate" href="https://jigsaw.w3.org/css-validator/check/referer"
+            referrerpolicy="unsafe-url">Validate CSS</a>
+    </footer>
+
+    <!-- Adding JavaScript functionality -->
+    <script src="products.js"></script>
+
+</body>
+
+</html>

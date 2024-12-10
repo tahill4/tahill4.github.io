@@ -1,0 +1,127 @@
+/*******************************************************************************
+* Course: CST 231 - Web Systems
+* Project: Shoppy - Organic Produce Store
+* Purpose: Style definitions for [products]
+* Authors: [Omer Mohamed, Tamryn Hill, Mohamed Wodome]
+* Date: December 9, 2024
+*******************************************************************************/
+
+
+/*removing margin*/
+html,
+body {
+    margin: 0px;
+}
+
+/*changing background color*/
+body {
+    background-color: rgb(61, 75, 94);
+}
+
+/*changing background color, dimensions and padding*/
+nav {
+    background-color: rgb(91, 146, 223);
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+}
+
+/*styling the image size and border*/
+img {
+    margin-top: 20px;
+    width: 70%;
+    height: 70%;
+}
+
+/*changing font-size family, margin, and color*/
+a {
+    font-size: 30px;
+    font-family: 'Cambria';
+    margin-left: 150px;
+    color: black;
+}
+
+/*styling the container which has our reviews with some margin*/
+#container {
+    margin-top: 50px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* styling the width, text-align, border, and background-color*/
+.item {
+    width: 400px;
+    text-align: center;
+    border: solid 3px black;
+    background-color: rgb(141, 141, 189);
+    transition: all 0.3s ease;
+}
+
+/*styling the text to the margin*/
+.text {
+    margin-top: 20px;
+}
+
+/* Search autocomplete styling */
+.ui-autocomplete {
+    background: rgb(91, 146, 223);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Calculator widget styling */
+.calculator {
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+/* This is a comment to make validations within the footer*/
+.validate {
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+.error {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*styling the button on the active page*/
+#active {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    a {
+        margin-left: 50px;
+        font-size: 24px;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
