@@ -10,7 +10,7 @@ $(document).ready(function () {
             data.reviews.forEach(review => {
                 $("#container").append(`
                     <div class="comment">
-                        <img src="images/${review.image}">
+                        <img src="${review.image}">
                         <span>${review.text}</span>
                     </div>
                 `).hide().fadeIn();
