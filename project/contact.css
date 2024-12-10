@@ -1,0 +1,112 @@
+/*******************************************************************************
+* Course: CST 231 - Web Systems
+* Project: Shoppy - Organic Produce Store
+* Purpose: Style definitions for [Contact]
+* Authors: [Omer Mohamed, Tamryn Hill, Mohamed Wodome]
+* Date: December 9, 2024
+*******************************************************************************/
+
+
+/*removing margin*/
+html,
+body {
+    margin: 0px;
+}
+
+/*changing background color*/
+body {
+    background-color: rgb(61, 75, 94)
+}
+
+/*changing background color, dimensions and padding*/
+nav {
+    background-color: rgb(91, 146, 223);
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+}
+
+/*changing font-size family, margin, and color*/
+a {
+    font-size: 30px;
+    font-family: 'Cambria';
+    margin-left: 150px;
+    color: black;
+}
+
+/*styling the container which has our reviews with some margin*/
+#container {
+    margin-top: 100px;
+    text-align: center;
+    width: 60%;
+    margin-left: 250px;
+    font-size: 20px;
+}
+
+
+
+/* This is a comment to make validations within the footer*/
+
+.validate {
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+/* Form validation styling */
+.error {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*styling the button on the active page*/
+#active {
+    color: white;
+}
+
+/* Form input enhancement */
+input,
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(91, 146, 223);
+}
+
+/* Success message */
+.success {
+    background-color: rgb(136, 207, 192);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    a {
+        margin-left: 50px;
+        font-size: 24px;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
