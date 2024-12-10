@@ -1,15 +1,15 @@
 {
     "reviews": [
         {
-            "image": "images/reviewer1.jpg",
+            "image": "reviewer1.jpg",
             "text": "Great organic produce! The apples are always fresh."
         },
         {
-            "image": "images/reviewer2.jpg",
+            "image": "reviewer2.jpg",
             "text": "Best prices for organic fruits in town."
         },
         {
-            "image": "images/reviewer3.jpg",
+            "image": "reviewer3.jpg",
             "text": "Love the variety of seasonal fruits they offer."
         }
     ]
