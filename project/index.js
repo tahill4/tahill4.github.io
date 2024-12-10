@@ -6,16 +6,16 @@ $(document).ready(function () {
     // Load reviews dynamically with error handling
     $.ajax({
         url: 'reviews.json',
-        success: function (data) {
-            data.reviews.forEach(review => {
-                $("#container").append(`
-                    <div class="comment">
-                        <img src="${review.image}">
-                        <span>${review.text}</span>
-                    </div>
-                `).hide().fadeIn();
-            });
-        },
+           success: function(data) {
+    data.reviews.forEach(review => {
+        $("#container").append(`
+            <div class="comment">
+                <img src="images/${review.image}">
+                <span>${review.text}</span>
+            </div>
+        `).hide().fadeIn();
+    });
+}
         error: function (xhr, status, error) {
             $("#container").append(`
                 <div class="error">
